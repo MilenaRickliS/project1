@@ -37,22 +37,22 @@ class CidadeController extends Controller
             case 'Guarapuava':
                 $c['id'] = 1;
                 $c['estado'] = 'PR';
-                $c['populacao'] = '';
-                $c['area'] = '';
+                $c['populacao'] = '188.710 habitantes';
+                $c['area'] = '3.168,087 km²';
                 $c['pais'] = 'Brasil';
                 break;
             case 'Curitiba':
                 $c['id'] = 2;
                 $c['estado'] = 'PR';
-                $c['populacao'] = '';
-                $c['area'] = '';
+                $c['populacao'] = '1.773.718 pessoas';
+                $c['area'] = '434,892 km²';
                 $c['pais'] = 'Brasil';
                 break;
             case 'Recife':
                 $c['id'] = 3;
                 $c['estado'] = 'PE';
-                $c['populacao'] = '';
-                $c['area'] = '';
+                $c['populacao'] = '1.653.461 habitantes';
+                $c['area'] = ' 218.843 km²';
                 $c['pais'] = 'Brasil';
                 break;
             // default:
