@@ -44,7 +44,7 @@ class CidadeController extends Controller
             case 'Curitiba':
                 $c['id'] = 2;
                 $c['estado'] = 'PR';
-                $c['populacao'] = '1.773.718 pessoas';
+                $c['populacao'] = '1.773.718 habitantes';
                 $c['area'] = '434,892 km²';
                 $c['pais'] = 'Brasil';
                 break;
