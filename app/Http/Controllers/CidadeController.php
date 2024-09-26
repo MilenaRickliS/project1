@@ -11,6 +11,7 @@ class CidadeController extends Controller
             ['nome' => 'Guarapuava', 'id' => 1, 'estado' => 'PR', 'populacao' => '', 'area' => '', 'pais' => 'Brasil', 'imagem' => ''],
             ['nome' => 'Curitiba', 'id' => 2, 'estado' => 'PR', 'populacao' => '', 'area' => '', 'pais' => 'Brasil', 'imagem' => ''],
             ['nome' => 'Recife', 'id' => 3, 'estado' => 'PE', 'populacao' => '', 'area' => '', 'pais' => 'Brasil', 'imagem' => ''],
+            ['nome' => 'São Paulo', 'id' => 4, 'estado' => 'SP', 'populacao' => '', 'area' => '', 'pais' => 'Brasil', 'imagem' => ''],
         ];
         return view('cidades.index', compact('cidades'));
 
@@ -59,6 +60,14 @@ class CidadeController extends Controller
                 $c['pais'] = 'Brasil';
                 $c['imagem'] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Recife_-_In%C3%ADcio_da_Avenida_Boa_Viagem.jpg/760px-Mapcarta.jpg';
                 break;
+            case 'São Paulo':
+                    $c['id'] = 4;
+                    $c['estado'] = 'SP';
+                    $c['populacao'] = '11,45 milhões habitantes';
+                    $c['area'] = ' 1 521,202 km²';
+                    $c['pais'] = 'Brasil';
+                    $c['imagem'] = 'https://www.zapimoveis.com.br/blog/wp-content/uploads/2023/12/cidade-de-sao-paulo.jpg';
+                    break;
             // default:
             //     $p['capital'] = 'não encontrado';
         }

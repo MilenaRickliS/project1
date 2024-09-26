@@ -39,5 +39,5 @@
         <p>Área em km2: {{ $c['area']}}</p>
         <p>País: {{ $c['pais']}}</p> 
     </div>
-    <img src={{ $c['imagem'] }} />
+    <img src="{{ $c['imagem']}}" />
 </div>
