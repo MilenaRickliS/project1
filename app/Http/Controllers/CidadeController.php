@@ -8,9 +8,9 @@ class CidadeController extends Controller
 {
     public function index(){
         $cidades = [
-            ['nome' => 'Guarapuava', 'id' => 1, 'estado' => 'PR', 'populacao' => '', 'area' => '', 'pais' => 'Brasil'],
-            ['nome' => 'Curitiba', 'id' => 2, 'estado' => 'PR', 'populacao' => '', 'area' => '', 'pais' => 'Brasil'],
-            ['nome' => 'Recife', 'id' => 3, 'estado' => 'PE', 'populacao' => '', 'area' => '', 'pais' => 'Brasil'],
+            ['nome' => 'Guarapuava', 'id' => 1, 'estado' => 'PR', 'populacao' => '', 'area' => '', 'pais' => 'Brasil', 'imagem' => ''],
+            ['nome' => 'Curitiba', 'id' => 2, 'estado' => 'PR', 'populacao' => '', 'area' => '', 'pais' => 'Brasil', 'imagem' => ''],
+            ['nome' => 'Recife', 'id' => 3, 'estado' => 'PE', 'populacao' => '', 'area' => '', 'pais' => 'Brasil', 'imagem' => ''],
         ];
         return view('cidades.index', compact('cidades'));
 
@@ -30,6 +30,7 @@ class CidadeController extends Controller
             'populacao' => 'Desconhecido',
             'area' => 'Desconhecido',
             'pais' => 'Desconhecido',
+            'imagem' => 'Desconhecido'
             
         ];
 
@@ -40,6 +41,7 @@ class CidadeController extends Controller
                 $c['populacao'] = '188.710 habitantes';
                 $c['area'] = '3.168,087 km²';
                 $c['pais'] = 'Brasil';
+                $c['imagem'] = 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Guarapuava_10.jpg';
                 break;
             case 'Curitiba':
                 $c['id'] = 2;
@@ -47,6 +49,7 @@ class CidadeController extends Controller
                 $c['populacao'] = '1.773.718 habitantes';
                 $c['area'] = '434,892 km²';
                 $c['pais'] = 'Brasil';
+                $c['imagem'] = 'https://cdn.myside.com.br/base/d1e/b49/851/jardim-botanico-bairro-curitiba.jpg';
                 break;
             case 'Recife':
                 $c['id'] = 3;
@@ -54,6 +57,7 @@ class CidadeController extends Controller
                 $c['populacao'] = '1.653.461 habitantes';
                 $c['area'] = ' 218.843 km²';
                 $c['pais'] = 'Brasil';
+                $c['imagem'] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Recife_-_In%C3%ADcio_da_Avenida_Boa_Viagem.jpg/760px-Mapcarta.jpg';
                 break;
             // default:
             //     $p['capital'] = 'não encontrado';
